@@ -1,0 +1,128 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header_descuentos {
+  background-color: #1CD1B0;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.header_titulo {
+  background-color: #00669F;
+  height: 25%;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+/* IMPLEMENTACION DE CARDS*/
+
+#cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 40%;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.Batman,
+.Harley,
+.wonderWoman,
+.Superman {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.fa-heart {
+  color: red;
+  position: absolute;
+  left: 4%;
+  top: 2%;
+  font-size: 1.5rem;
+}
+
+.bgimg{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0px 0px; /* Redondea las esquinas en sentido horario: superior izquierda, superior derecha, inferior derecha, inferior izquierda */
+}
+
+.photo{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  z-index: 1;
+  position: absolute;
+  left: 35%;
+  top: 18%;
+}
+.description {
+  width: 100%;
+  height: 70%;
+  text-align: center;
+  position: relative;
+  padding: 0.5rem;
+  padding-top: 2rem;
+  background-color: #F3F3F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.description h2{
+  padding-bottom: 1rem;
+}
+
+.description_card {
+  font-size: 0.9rem;
+}
+
+button {
+  height: 3rem;
+  width: 8rem;
+  background-color: #00669F;
+  color: #f3f3f3;
+  margin: 1rem;
+} 
+
+/* CIERRE CARDS*/
+
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 5vh;
+  background-color: #0066A0;
+  color: #ffffff;
+  z-index: 3;
+}
+
+footer p {
+  font-size: 0.8rem;
+  text-align: center;
+  padding-top: 1rem;
+  
+}
+
+@media (max-width: 780px) {
+
+  #cards{
+    
+    width: 40%;
+    height: 50%;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  
+  }
+
+  .photo{
+    left: 35%;
+    top: 28%;
+  }
